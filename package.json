@@ -1,0 +1,16 @@
+{
+  "name": "puppet-scrape",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "git@github.com:JackAlexRose/puppet-scrape.git",
+  "author": "JackAlexRose <jackalexanderrose@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.3",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
