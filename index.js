@@ -4,7 +4,6 @@ const fs = require("fs");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 puppeteer.use(StealthPlugin());
 
-// query for all the divs with the data-test-id "ingredient-item-shipped"
 const ingredientShippedSelector = '[data-test-id="ingredient-item-shipped"]';
 const ingredientNotShippedSelector =
   '[data-test-id="ingredient-item-not-shipped"]';
@@ -157,13 +156,6 @@ const nutritionSelector = '[data-test-id="nutrition-step"]';
         descriptionSelector,
         timeSelector
       );
-
-      // // query the text content of each div
-      // const ingredientList = await newPage.evaluate(async (selector) => {
-      //   const elements = document.querySelectorAll(selector);
-
-      //   return [...elements].map((element) => element.textContent);
-      // }, ingredientSelector);
 
       recipeData.push({ ...recipeName, ...recipeDetails });
 
